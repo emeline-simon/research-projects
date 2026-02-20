@@ -1,0 +1,231 @@
+%Version 1.0 January 2026
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style
+
+ %\documentclass[referee,sn-basic]{sn-jnl}% referee option for double line spacing
+
+%%%% Standard Packages
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage[compatibility=false]{caption}
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{array,xcolor,colortbl}%
+\usepackage{tabularx}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+\usepackage{enumerate}%
+
+%%%%
+
+%%%%
+
+%%==================================%%
+%% Front page %%
+%%==================================%%
+
+\begin{document}
+
+\title[Article Title]{Évaluation des risques d'exposition aux polluants du caoutchouc dans les salles de pratique d'escalade urbaines en métropoles françaises}
+
+
+\author{\fnm{Emeline} \sur{Simon}}\email{emeline.simon@gmail.com}
+
+\author{\fnm{Gloria} \sur{Cotomale}}\email{gcotomale@gmail.com}
+
+\author{\fnm{Ahlem} \sur{Silini}}\email{ahlemsilini7@gmail.com}
+
+\author{\fnm{Marwa} \sur{Wesleti}}\email{marwa.weslati@pasteur.utm.tn}
+
+\affil{\orgname{Ecole Pasteur-Cnam de santé publique}, \orgaddress{\street{292 rue saint-Martin}, \city{Paris}, \postcode{75003}, \country{France}}}
+
+%%==================================%%
+%% Abstract %%
+%%==================================%%
+
+\abstract{Cette étude propose la première évaluation quantitative du risque sanitaire (EQRS) liée à l'exposition à plusieurs additifs du caoutchouc et à leurs produits de transformation dans des salles d'escalade urbaines françaises. Les mesures montrent une prédominance des additifs sur les surfaces et de leurs dérivés oxydés (BTZ, 2-OH-BTZ, 6PPD-Q) dans les poussières et les fractions particulaires, orientant l'analyse vers les voies inhalation et ingestion de poussières pour quatre scénarios d'exposition. Des doses journalières systémiques (DJA) ont été calculées et comparées à des VTR orales dérivées de données toxicologiques obtenues chez les rongeurs. Les résultats suggèrent un risque non préoccupant pour l'ensemble des scénarios, malgré des expositions plus marquées pour les grimpeurs réguliers et les agents d'entretien. D'importantes incertitudes subsistent toutefois, en raison du manque de données toxicologiques pour certaines substances et des données de mesures françaises encore limitées. L'évaluation conduit donc à recommander la production prioritaire de nouvelles connaissances toxicologiques, ainsi qu'une amélioration des pratiques d'entretien et de gestion de l'air au titre du principe de précaution.}
+
+\keywords{salles d'escalade urbaines, pollution, microplastiques, risques sanitaires}
+
+\maketitle
+
+%%==============================================%%
+%% SECTION 1. INTRODUCTION                      %%
+%%==============================================%%
+
+\section{Cadre général de l'évaluation}
+\label{sec1}
+
+\subsection{Objectifs de la saisine}
+\label{subsec1}
+
+La présente saisine a pour objectif d'évaluer les risques sanitaires associés à l'exposition à plusieurs composés dérivés du caoutchouc présents dans l'air intérieur des salles d'escalade urbaines. Cette évaluation porte sur les populations les plus susceptibles d'être exposées,à savoir les personnels travaillant dans ces établissements et les pratiquants, qu'ils soient réguliers ou occasionnels. Les autres usagers ponctuels, dont la présence est limitée, ne sont pas considérés dans le périmètre de la présente analyse.
+
+\subsection{Contexte et justification}
+\label{subsec2}
+
+Depuis les quinze dernières années, la pratique de l'escalade en salle connaît un essor rapide dans les grandes métropoles françaises et européennes. Les matériaux techniques présents dans ces environnements, comme les tapis, les sols amortissants, les prises murales ou les semelles de chaussons d'escalade, contiennent fréquemment des élastomères susceptibles de libérer, sous l'effet de l'abrasion, de la friction répétée ou de la dégradation mécanique, des
+particules microplastiques en suspension. Ce mode d'émission a déjà été documenté dans d'autres contextes d'usure du caoutchouc, en particulier lors de l'érosion des pneumatiques sur la chaussée. Les particules émises peuvent ensuite être drainées par les eaux pluviales vers les sols et les milieux aquatiques, constituant ainsi une source de contamination chronique pour les écosystèmes dans l'environnement immédiat des trafics routiers. La libération récurrente de ces additifs plastiques soulève d'importantes préoccupations environnementales, du fait de leur grande capacité de dispersion et de la toxicité avérée de certains composés pour les organismes vivants. Dans ce contexte, des travaux menés en 2024 dans plusieurs salles d'escalade européennes ont permis, pour la première fois, d'appliquer une méthode d'extraction dédiée à la quantification et à la caractérisation des microplastiques dans un environnement intérieur sportif. Ces analyses ont mis en évidence la présence de plusieurs additifs plastiques détectés dans l'air, les poussières sédimentées et sur les surfaces des prises murales, avec, dans certaines salles, des
+concentrations nettement supérieures à celles rapportées en bordure d'axes routiers très fréquentés ou dans certaines mégapoles chinoises. Ces travaux montrent en particulier que, parmi l'ensemble des équipements techniques présents dans les salles, les semelles de chaussons d'escalade constituent la principale source d'émission, via un mécanisme d'abrasion mécanique étroitement analogue à celui décrit pour les pneumatiques en milieux routiers. Ces découvertes, totalement inédites dans un environnement intérieur généralement perçu comme «
+inoffensif » par le public, ont fait l'objet d'une forte couverture médiatique. En effet, elles soulèvent des questions quant aux conséquences d'une exposition prolongée, voire quotidienne, sur la santé du personnel des salles d'escalade, ainsi que sur celle des usagers.
+
+\subsection{Données disponibles et ressources documentaires}\label{subsec3}
+
+Les données relatives aux microplastiques évalués dans cette saisine proviennent de la littérature scientifique et de plusieurs rapports d'agences sanitaires. Les documents techniques publiés par l'Agence des Etats-Unis pour la Protection de l'Environnement (EPA) ou par le
+Conseil Interétatique sur la Technologie et la Réglementation (ITRC) ont également été examinés pour compléter l'état des connaissances, notamment concernant la nature des dangers (génotoxicité, reprotoxicité, écotoxicité, etc.), le devenir environnemental, les voies d'exposition, et, lorsque disponibles, les valeurs toxicologiques de référence (VTR) ou les doses critiques établies à partir d'études animales (NOAEL, LOAEL, etc.) (voir section \ref{subsec8}). Les données démographiques concernant les salariés des salles d'escalade françaises sont issues d'enquêtes nationales, qui fournissent des effectifs chiffrés ainsi que les conditions d'occupation des locaux. Celles relatives aux pratiquants, réguliers ou occasionnels, sont issues des publications de la Fédération Française de la Montagne et de l'Escalade (FFME). Ces informations permettent de caractériser les populations susceptibles d'être exposées, ainsi que la durée, la fréquence et les modalités de présence pouvant influencer le niveau d'exposition aux composés dérivés du caoutchouc (voir sections 5.1 et 5.2). L'ensemble de ces sources a été mobilisé pour construire des scénarios d'exposition réalistes, conçus pour reproduire le plus fidèlement possible les conditions de fréquentation observées dans les salles d'escalade françaises (voir section 5.4).
+
+\subsection{Périmètre et limites de l'évaluation}\label{subsec4}
+
+Plusieurs limites encadrent cette évaluation. En premier lieu, l'insuffisance de mesures directes dans les salles d'escalade françaises conduit à s'appuyer sur des mesures provenant d'autres pays européens. Cette dépendance à des données externes introduit des incertitudes quant à la transposabilité et la représentativité des expositions évaluées pour le contexte français. Deuxièmement, les données toxicologiques disponibles restent incomplètes pour certaines des substances considérées, ce qui limite la précision de la caractérisation du risque et nécessite une interprétation prudente des résultats. Troisièmement, la grande variabilité des matériaux (prises, semelles, revêtements), des pratiques d'entretien et des systèmes de ventilation peut modifier de façon significative les concentrations de polluants présents dans l'air. Ces paramètres, n'étant pas documentés de manière homogène, ne seront donc pas intégrés de façon exhaustive dans nos estimations. Ils pourraient toutefois faire l'objet d'une évaluation.
+
+
+%%==============================================%%
+%% SECTION 2. OBJECTIFS ET METHODES             %%
+%%==============================================%%
+
+\section{Objectifs et méthodes}\label{sec2}
+
+\subsection{Objectifs de l'évaluation}\label{subsec5}
+
+Cette évaluation s'inscrit dans une démarche d'évaluation quantitative des risques sanitaires (EQRS), visant à caractériser les expositions et les risques sanitaires associés à certains composés dérivés du caoutchouc retrouvés dans les salles d'escalade urbaines, pour les
+populations susceptibles d'y être exposées de manière régulière. S'appuyant sur les données actuellement disponibles et sur des scénarios d'exposition construits à partir des usages observés dans ces environnements, elle a également pour objectif d'identifier les principales sources d'incertitudes et de formuler des recommandations vers la production de données complémentaires, la prévention des expositions et, le cas échéant, l'orientation de futures actions de gestion du risque. Plus précisément, il s'agit de :
+
+\begin{enumerate}
+\item  Documenter la nature chimique et les dangers sanitaires associés aux additifs du caoutchouc retrouvés dans l'environnement intérieur des salles d'escalade, afin de sélectionner des substances prioritaires pour cette évaluation.
+\item Décrire et analyser les niveaux de concentration des additifs du caoutchouc sélectionnés et de leurs produits de transformation dans l'air intérieur et les poussières des salles d'escalade.
+\item Construire des scénarios d'exposition réalistes selon les activités pratiquées et les modalités de présence dans les salles, pour les différentes catégories de population considérées.
+\item  Estimer les doses journalières absorbées (DJA) par les voies d'exposition jugées pertinentes au regard des dangers caractérisés, et comparer ces estimations à des valeurs toxicologiques de référence (VTR) établies, ou, à défaut, dérivées à partir des données toxicologiques disponibles.
+\item  Formuler des recommandations de prévention et de gestion du risque, hiérarchisées en fonction des incertitudes, des besoins prioritaires, de la faisabilité opérationnelle et de l'impact sanitaire attendu.
+\end{enumerate}
+
+\subsection{Cadre métholodique de l'EQRS}
+\label{subsec6}
+
+L'approche générale retenue pour la conduite de cette EQRS est présentée de manière détaillée dans la Figure 1. Les cinq étapes de
+la démarche d'évaluation retenue dans cette saisine s'inscrivent dans un cadre méthodologique classique recommandé par les agences sanitaires pour l'évaluation des risques liés aux expositions environnementales humaines.
+
+%%==============================================%%
+%% SECTION 3. IDENTIFICATION DES DANGERS        %%
+%%==============================================%%
+
+\section{Identification et caractérisation des dangers détectés dans les salles d'escalade urbaines}
+\label{sec3}
+
+\subsection{Choix des substances jugées prioritaires pour l'EQRS}
+\label{subsec7}
+
+Parmi la trentaine d'additifs plastiques identifiés dans le caoutchouc des semelles de chaussons, dont quatorze ont été détectés dans l'air intérieur et les poussières des salles d'escalade, la présente évaluation se concentre sur cinq substances jugées prioritaires : le 2-mercaptobenzothiazole (2-SH-BTZ), le benzothiazole (BTZ), le 2-hydroxybenzothiazole (2-OH-BTZ), le 6-PPD et la 6-PPD-quinone (6-PPD-Q). Ce choix repose sur trois critères : (i) leur prévalence dans les matériaux sources, en particulier les semelles, (ii) leur fréquence importante de détection et leur distribution dans l'environnement intérieur des salles, et (iii) l'existence de données toxicologiques suggérant un potentiel de danger.
+
+\subsection{Nature chimique et propriétés toxicologiques des substances prioritaires}
+\label{subsec8}
+
+\textbf{Benzothiazoles: additifs majeurs du caoutchouc}
+\\ \\
+Le 2-SH-BTZ figure parmi les additifs les plus couramment utilisés dans l'industrie du caoutchouc, notamment comme accélérateur de vulcanisation. Il est également un additif largement majoritaire des semelles de chaussons d'escalade, représentant en moyenne près de
+67\% de la masse totale des additifs plastiques utilisés dans leur formulation (Figure 2). Au cours de la pratique, il est l'un des principaux composés transférés sur les prises murales, ce qui en fait une source majeure d'émissions de microplastiques issue de l'abrasion des chaussons. Sous l'effet de l'oxydation, le 2-SH-BTZ se transforme en plusieurs dérivés benzothiazoles, notamment le BTZ et le 2-OH-BTZ, qui sont, quant à eux, systématiquement détectés dans les poussières sédimentées et dans les fractions aéroportées des salles d'escalade.
+Sur le plan toxicologique, le 2-SH-BTZ est classé comme « probablement cancérogène pour l'humain » (groupe 2A du CIRC). Cette classification repose sur des données humaines limitées mais sur des preuves suffisantes de cancérogénicité chez l'animal, avec l'observation de
+tumeurs, notamment hépatiques et rénales, chez les rongeurs. Un excès de risque de cancer de la vessie a été rapporté dans certains contextes professionnels avec des expositions élevées au 2-SH-BTZ, sans que la relation causale ne soit formellement établie à ce stade. Les benzothiazoles présentent également des propriétés irritantes et sensibilisantes cutanées, oculaires et respiratoires, ainsi qu'un potentiel génotoxique documenté à fortes doses dans des modèles animaux. Sur le plan environnemental, plusieurs composés de cette famille sont reconnus pour leur écotoxicité aiguë et chronique vis-à-vis des organismes aquatiques, avec des effets délétères observés sur la survie, la croissance et la reproduction de différentes espèces.
+Des données expérimentales de toxicité systémique sont disponibles pour le 2-S-BTZ, mais restent très limitées pour le BTZ et le 2-OH-BTZ. Pour le 2-SH-BTZ, des études subchroniques et chroniques par voie orale chez les rongeurs ont notamment permis d'identifier : (i) un NOAEL de 94 mg/kg‑j et un LOAEL de 188 mg/kg‑j associés à une toxicité hépatique après 13 semaines (augmentation du poids relatif du foie), et (ii) un LOAEL d'environ 375 mg/kg/j pour des atteintes rénales chroniques après une exposition de deux ans(tableau 1). Pour le BTZ et le 2-OH-BTZ, les informations issues des fiches de sécurité se limitent à des classifications de toxicité aiguë H302/H312 (nocif en cas d'ingestion ou de contact cutané), sans mention de données relatives à une toxicité chronique ou subchronique, quelle que soit la voie d'exposition.
+
+\textbf{Les para-phénylènediamines : 6PPD et 6PPD-Q, antioxydants majeurs des caoutchoucs}
+Le 6PPD (N-(1,3-diméthylbutyl)-N'-phényl-p-phénylènediamine) est un additif organique utilisé depuis plus de soixante ans comme antioxydant et antiozonant dans la formulation des caoutchoucs des pneus. On le retrouve également, à des teneurs plus faibles, dans d'autres équipements techniques, comme les semelles des chaussons d'escalade, où il représente environ 0.16\% de la masse totale des additifs plastiques incorporés au caoutchouc (Figure 2). Pendant la pratique, le 6PPD est progressivement transféré vers les surfaces de contact par abrasion, puis, sous l'effet de l'oxygène, il subit une réaction d'oxydation en cascade conceptuellement très proche de celle du 2-SH-BTZ, conduisant à la formation de plusieurs produits plus oxydés et, pour certains, plus réactifs sur le plan toxicologique. Parmi eux, la 6PPD-Q, qui est aujourd'hui considérée comme son principal dérivé d'intérêt sanitaire et environnemental, avec une toxicité sensiblement supérieure à celle du composé parent. Comme
+pour certains dérivés benzothiazoles, elle est détectée de manière récurrente dans les poussières et les fractions aéroportées des salles d'escalade. Sur le plan écotoxicologique, le 6PPD et la 6PPDQ sont également associés à la contamination chronique des écosystèmes aquatiques par les particules d'usure des pneus et de la chaussée.
+La 6PPD-Q se situe parmi les substances toxiques les plus puissantes connues chez les salmonidés, avec des concentrations létales aiguës (LC50) extrêmement faibles, de l'ordre de 0,04–0,1 µg/L, pour les espèces les plus sensibles. Cette substance a été associée à plusieurs
+épisodes de mortalité massive de saumons dans le nord-ouest Pacifique en 2024, conduisant l'EPA à proposer une valeur guide non contraignante pour la protection des milieux aquatiques de 11 ng/L, qui constitue aujourd'hui l'un des rares repères disponibles. Le 6PPD présente également une toxicité aiguë notable pour les organismes aquatiques, même si elle reste nettement inférieure à celle de la 6PPD-Q, avec des LC50 typiquement comprises entre quelques dizaines et quelques centaines de µg/L selon les espèces, soit des valeurs environ cent à mille fois plus élevées que pour la 6PPD-Q. Dans les modèles de mammifères, le couple 6PPD/6PPD‑Q présente un profil toxicologique
+différencié mais complémentaire, avec des organes cibles partiellement communs tels que le foie et le système hématopoïétique. Le 6PPD est classé, dans les dossiers réglementaires, comme sensibilisant cutané et toxique pour la reproduction de catégorie 1B, sur la base d'études murines. Un NOAEL oral d'environ 7 mg/kg‑j a été identifié dans une étude de toxicité pour la reproduction, des doses plus élevées entraînant une mortalité maternelle et néonatale, tandis que des atteintes hépatiques et hématologiques sont rapportées à partir d'environ mg/kg‑j en exposition subchronique. Pour la 6PPD‑Q, les données chez les rongeurs restent plus limitées, en particulier en l'absence de NOAEL clair, mais plusieurs études mettent en évidence un LOAEL oral d'environ 10 mg/kg‑j pour des effets hépatiques après exposition
+subchronique, ainsi que des lésions multiviscérales à des doses plus faibles lors d'administrations intrapéritonéales.
+
+\begin{table}[hp]
+\caption{Valeurs critiques de toxicité systémique pour le 2‑SH‑BTZ, le 6PPD et la 6PPD‑Q.}\label{tab1}%
+\begin{tabular}{p{0.12\linewidth}p{0.15\linewidth}p{0.12\linewidth}p{0.10\linewidth}p{0.10\linewidth}p{0.26\linewidth}}
+\toprule%
+Substance & Type d'étude & Schéma & NOAEL & LOAEL & Effets critiques effects\footnotemark[1] \\\cmidrule{3-5}%
+& & \multicolumn{3}{c}{mg/kg-day}\\
+\midrule
+2-SH-BTZ    & Subchronique : 13 semaines, rongeur, oral   & 0, 88, 194  & 94    &    188    &    Hepatic toxicity: ↑ relative liver weight.  \\
+2-SH-BTZ    & Chronique : 2 ans, rongeur, oral   & High doses up to 375    & ND    & 365  & Chronic renal effects: tubular and/or glomerular lesions at prolonged high doses.  \\
+6PPD    & Subchronique : 28 jours, rat, oral    & 0, 4, 20, 100       & 20 (4 femelles)    & 100 (20 femelles)    &    ↑ relative liver weight, periportal steatosis, anaemia, ↑ serum total proteins in females. \\
+6PPD    & Reproduction : one generation, rat, oral    &    7, 20, 60    & 7 (toxicité néonatale) and 20 (adultes)    & 20 (toxicité néonatale)   & Dose-dependent dystocia, maternal mortality at high dose. No male repro effects up to 60 mg/kg-day. \\
+6PPD-Q    & Subchronique : 6 semaines, souris, oral    &    10, 30, 100   & ND    &    10     & ↑ hepatic triglycerides, liver weight, steatosis, oxidative stress and inflammation. \\
+6PPD-Q    & Subchronic: 28 days, male mice, i.p.   & 0.4 and 4 every 4 days    &    ND    & 0.4  & Multi-organ lesions (liver, kidney, lung, spleen, testis, brain); strong accumulation in liver, kidney and lung. \\
+\botrule
+
+\end{tabular}
+\footnotetext{Summary of NOAEL and LOAEL values derived from experimental rodent studies, by oral (and, where applicable, intraperitoneal) exposure route, according to study type, species and exposure duration, with indication of target organs and critical effects.}
+\footnotetext[1]{Notes: Doses refer to administered levels; effects are as reported in the original studies.}
+\end{table}
+
+The values presented in table \ref{tab1} represent the main toxicological points of departure that can be used to derive toxicological reference values (TRVs) in the context of the present quantitative health risk assessment.
+
+
+\subsection{Detection profiles in the climbing gym environment}
+\label{subsec9}
+
+Measured concentrations of the five selected substances in various gym environmental matrices (air fractions, dust, and hold surfaces) are presented in Table \ref{tab2}. These measurements were taken during peak activity and attendance periods, representing conditions most likely to generate emissions and exposures. Analysis of these concentrations reveals a clear distinction between compounds predominantly found on solid surfaces and those specific to dust and airborne particulate fractions. Parent rubber compounds (2-SH-BTZ and 6PPD) are mainly detected on wall holds at high concentrations, reflecting direct deposition of "raw" abraded plastic material from shoe soles. In contrast, they are only weakly present or below detection limits in airborne fractions. Their transformation products (BTZ, 2-OH-BTZ, and 6PPD-Q), however, predominate in aerosol fractions (LTR, UTR, and total PM), while surface concentrations remain low.
+
+\begin{table}[hp]
+\caption{Concentrations of selected rubber-derived compounds measured in climbing gym matrices}\label{tab2}%
+\begin{tabularx}{\textwidth}{lXXXXX}
+\toprule
+Substance & Wall holds (µg/g)  & Dust (µg/g) & LTR fraction (ng/m³) & UTR fraction (ng/m³) & total PM aerosols (ng/m³)\\
+\midrule
+2-SH-BTZ    & 43.5–553   & $<$LOQ–4.37  & $<$LOQ–0.55 & $<$LOQ–1.41    & $<$LOQ–1.71  \\
+BTZ    & $<$LOQ–99.7   & $<$LOQ–34.4  & $<$LOQ–2.47    & 0.51-13.9    & 0.51-16.4  \\
+2-OH-BTZ    & $<$LOQ–43.0   & $<$LOQ–9.50 & 1.07-4.41    & 0.33-4.11    & 1.41-7.26     \\
+6PPD    & 0.61-33.8    & $<$LOQ–0.30   & $<$LOQ–0.24 & 0.04-0.31  & 0.04-0.49  \\
+6PPD-Q    & 0.11-0.91    & $<$LOQ–0.58 & 0.02-0.37 & 0.04-0.71  & 0.05–1.08  \\
+\botrule
+\end{tabularx}
+\footnotetext{Ranges of measured concentrations (minimum–maximum values) for respirable particulate fractions (LTR, UTR), total PM aerosols, settled dust and wall holds, across several European climbing gyms. "$<$LOQ" denotes concentrations below the limit of quantification of the extraction method used. Data from Sherman et al. (2025).}
+\end{table}
+
+
+%%==============================================%%
+%% SECTION 4. REGULATORY FRAMEWORKS             %%
+%%==============================================%%
+
+\section{Current regulatory and normative frameworks}
+\label{sec4}
+
+\subsection{Applicable regulations for substances and materials}
+\label{subsec10}
+
+As of the date of this assessment, no specific regulations apply to the substances under evaluation. The five compounds considered lack official toxicological reference values (TRVs), and no standards govern their maximum concentrations in indoor spaces in France. However, given the established biotoxic and ecotoxic effects of some of these substances (see section \ref{sec3}), several regulatory and citizen initiatives have recently been launched in the United States. Particular attention has focused on 6PPD and 6PPD-Q, whose role in acute aquatic toxicity linked to tire wear emissions is now well documented. In response to a petition filed in August 2023  requesting restrictions on 6PPD use in the tire industry, the US EPA issued a preliminary regulatory scoping notice and committed to enhanced data collection on 6PPD and 6PPD-Q, along with risk-management options to inform potential updates to the US regulatory framework.
+To date, no comparable regulatory initiatives are underway in Europe or France under REACH, CLP, or indoor/outdoor air quality provisions. Nevertheless, European regulations on small non-toxic particles provide reference points to ensure minimum indoor air quality levels in climbing gyms.
+
+\subsection{Standards for indoor air quality}
+\label{subsec11}
+
+In France and Europe, indoor air quality (IAQ) is governed by general regulations applicable to public establishments receiving the public (ERP), which mandate monitoring of certain pollutants, evaluation of ventilation practices, and measures to limit suspended particle accumulation. Indoor air quality guide values (VGAI), developed by health authorities, exist for several high-priority chemical compounds hazardous to human health.Complementing these indoor standards, European ambient air quality regulations offer benchmarks for suspended particles. The most commonly used reference values concern PM$_{2.5}$ and PM$_{10}$, with guideline exposure levels generally set at:
+\begin{itemize}
+\item PM$_{2.5}$: 25 µg/m³ (annual average)
+\item PM$_{10}$: 40 µg/m³ (annual average).
+\end{itemize}
+For reference, the WHO's 2021 updated recommendations set stricter thresholds of approximately 5 µg/m³ for PM$_{2.5}$ and 15 µg/m³ for PM$_{10}$ (annual averages) .
+
+\subsection{Frameworks specific to indoor sports facilities}
+\label{subsec12}
+
+While general standards govern IAQ in certain ERP, sports gyms remain poorly documented despite conditions inherent to physical activity that may amplify exposure to absorbable substances: increased respiratory rate and inhalation uptake, dust resuspension, incidental ingestion, and repeated contact with surfaces and equipment. Conversely, IAQ can be improved through tailored mitigation measures, such as optimized maintenance practices, occupancy and user-density management, space configuration, and regular air renewal. 
+
+\subsection{Climbing gym-specific mitigation measures}
+\label{subsec13}
+
+Fine particles in indoor environments are receiving growing attention, including in climbing gyms where discipline-specific practices have prompted scrutiny of dust levels and breathable air quality. Powdered magnesium (chalk), widely used to improve grip on holds, is now recognized as the primary source of PM$_{10}$ and PM$_{2.5}$ in climbing gyms. Excessive use increases airborne particulate loading and has been linked to irritant respiratory symptoms and, less commonly, ocular effects, particularly in poorly ventilated facilities. Limited available data indicate that PM$_{10}$ concentrations in some gyms can reach 509–4,028 µg/m³ , far exceeding WHO recommended thresholds (see section 4.2) and approaching occupational exposure limits for low-toxicity dusts. In response, the French Mountaineering and Climbing Federation (FFME) has advocated responsible chalk use since 2019, issuing operational recommendations for affiliated facilities. Although not formal regulations, these guidelines reflect a growing sector-wide awareness and commitment to improving air quality in climbing gyms.
+
+\end{document}
