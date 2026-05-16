@@ -1,4 +1,4 @@
-# 🧪 Research Projects
+# Research Projects
 
 This repository gathers my open research work.
 
@@ -6,7 +6,7 @@ Each subfolder corresponds to an independent project with dedicated data analysi
 
 *Projects hosted here are publicly shareable and do not contain confidential data.*
 
-## 📂 Current projects
+## Current projects
 
 | Project | Description | Status |
 |---------|-------------|--------|
