@@ -11,6 +11,7 @@ Each subfolder corresponds to an independent project with dedicated data analysi
 | Project | Description | Status |
 |---------|-------------|--------|
 | `climbing-gyms-pollution-2026/` | [Coming soon] | *In Writing* |
+| `flu-vaccination-spf-2026/` | [Coming soon] | *Started* |
 
 ---
 
